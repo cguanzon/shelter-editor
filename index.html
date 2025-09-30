@@ -31,7 +31,23 @@ Copyright (C) 2017
 </head>
 
 <body ng-app="shelter" ng-controller="dwellerController">
+
   <div class="container">
+    <div class="row tabs">
+      <a href="" class="tab">Fallout Shelter - Save Editor</a>
+      <a href="" ng-hide="!save.dwellers" class="tab" ng-click="section = 'vault'"
+        ng-class="{ 'active': section == 'vault' }">Vault {{ save.vault.VaultName }}<small></small></a>
+      <a href="" ng-hide="!save.dwellers" class="tab" ng-click="section = 'dwellers'"
+        ng-class="{ 'active': section == 'dwellers' }">Dwellers <small>({{ save.dwellers.dwellers.length }})</small></a>
+      <a href="" ng-hide="!save.dwellers" class="tab" ng-click="section = 'Others'"
+        ng-class="{ 'active': section == 'Others' }">Others <small>({{ save.dwellers.actors.length }})</small></a>
+      <a href="" ng-hide="!wastelandTeams.length" class="tab" ng-click="section = 'wastelandD'"
+        ng-class="{ 'active': section == 'wastelandD' }">WastelandD <small>({{ wastelandTeams.length }})</small></a>
+      <a href="" ng-hide="!wastelandTeams2.length" class="tab" ng-click="section = 'wastelandH'"
+        ng-class="{ 'active': section == 'wastelandH' }">WastelandH <small>({{ wastelandTeams2.length }})</small></a>
+      <a href="" ng-hide="!save.dwellers" class="tab" ng-click="section = 'extras'"
+        ng-class="{ 'active': section == 'extras' }">Extras</a>
+    </div>
     <div class="row box" ng-show="section == 'vault'">
       <div class="col-sm-12 vault_info">
         <form ng-show="fileName" name="vaultForm">
@@ -507,22 +523,6 @@ Copyright (C) 2017
       </div>
     </div>
 
-    <div class="row tabs">
-      <a href="" class="tab">Fallout Shelter - Save Editor</a>
-      <a href="" ng-hide="!save.dwellers" class="tab" ng-click="section = 'vault'"
-        ng-class="{ 'active': section == 'vault' }">Vault {{ save.vault.VaultName }}<small></small></a>
-      <a href="" ng-hide="!save.dwellers" class="tab" ng-click="section = 'dwellers'"
-        ng-class="{ 'active': section == 'dwellers' }">Dwellers <small>({{ save.dwellers.dwellers.length }})</small></a>
-      <a href="" ng-hide="!save.dwellers" class="tab" ng-click="section = 'Others'"
-        ng-class="{ 'active': section == 'Others' }">Others <small>({{ save.dwellers.actors.length }})</small></a>
-      <a href="" ng-hide="!wastelandTeams.length" class="tab" ng-click="section = 'wastelandD'"
-        ng-class="{ 'active': section == 'wastelandD' }">WastelandD <small>({{ wastelandTeams.length }})</small></a>
-      <a href="" ng-hide="!wastelandTeams2.length" class="tab" ng-click="section = 'wastelandH'"
-        ng-class="{ 'active': section == 'wastelandH' }">WastelandH <small>({{ wastelandTeams2.length }})</small></a>
-      <a href="" ng-hide="!save.dwellers" class="tab" ng-click="section = 'extras'"
-        ng-class="{ 'active': section == 'extras' }">Extras</a>
-    </div>
-
     <div class="row save">
       <button class="btn btn-primary pull-right" ng-click="download()" ng-show="fileName">Save</button>
     </div>
@@ -547,8 +547,6 @@ Copyright (C) 2017
 
 
     <br /><br />
-    <center><a style="color: #00FFff; background-color: rgb(122, 122, 122);" href="https://github.com/rakion99/shelter-editor"><strong>Click to View Source
-          Code</strong></a></center>
     <br>
     <center><b><a style="color: #ffffff; background-color: rgb(122, 122, 122);" href="SaveDecrypt.html">Fallout Shelter Save Decryptor</a></b></center>
     <br /><br /><span style="color: #00ff00;"><strong>Fallout Shelter content and materials are trademarks and

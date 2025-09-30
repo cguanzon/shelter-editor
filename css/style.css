@@ -4,9 +4,7 @@ body {
 }
 
 body {
-  background-image: url(../bg.png);
-  background-size: cover;
-  background-color: #000000;
+  background-color: darkslategrey;
 }
 
 body > .container {
@@ -21,7 +19,7 @@ body > .container {
 
 .tabs {
   height: 30px;
-  position: absolute;
+  position: relative;
   top: -5px;
 }
 
