@@ -1229,6 +1229,7 @@ app.controller('dwellerController', function ($scope) {
     NCR_Ranger: 'NCR Ranger outfit',
     RobCoFactoryUniform: 'RobCo factory uniform',
     RobCoRdSuit: 'RobCo R&D suit',
+    RottedDuster: 'The Ghoul\'s coat',
     ScarredPowerArmor: 'Scarred power armor',
     SleazySuit: 'Sleazy suit',
     Vault33Suit: 'Vault 33 suit'
