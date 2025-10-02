@@ -1219,7 +1219,18 @@ app.controller('dwellerController', function ($scope) {
     WastelandSurgeon_Doctor: 'Wasteland Doctor',
     WastelandSurgeon_Settler: 'Wasteland Medic',
     WorkDress: 'Rural Schoolmarm',
-    WrestlerSpecial: 'Wrestler Outfit'
+    WrestlerSpecial: 'Wrestler Outfit',
+    AlienSpaceSuit: 'Alien space suit',
+    BOSCasual: 'BOS casual',
+    Incognito: 'Incognito leisurewear',
+    LucysVaultSuit: 'Lucy\'s vault suit',
+    MaJuneJacket: 'Ma June jacket',
+    NCR_Ranger: 'NCR Ranger outfit',
+    RobCoFactoryUniform: 'RobCo factory uniform',
+    RobCoRdSuit: 'RobCo R&D suit',
+    ScarredPowerArmor: 'Scarred power armor',
+    SleazySuit: 'Sleazy suit',
+    Vault33Suit: 'Vault 33 suit'
   };
 });
 
