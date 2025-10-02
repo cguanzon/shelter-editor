@@ -33,8 +33,23 @@ Copyright (C) 2017
 <body ng-app="shelter" ng-controller="dwellerController">
 
   <div class="container">
+    <h1>Fallout Shelter Save Editor</h1>
+    <div class="instructions">
+      <p>Large Files can take more time to load!</p>
+      Drag a save file here (e.g. Vault1.sav) <br />
+      or select one here: <br /><input type="file" id="sav_file" name="sav_file" />
+      <br /><br /><br />
+      For PC/Launcher Version the save is in:<br /> "Documents\My Games\Fallout Shelter"
+      <br />
+      For Windows 10 Store version check this: <a style="color:blue"
+        href="https://bethesda.net/community/topic/25405/transfer-vault-from-desktop-version-to-play-anywhere">Click
+        Here</a>
+      <br />
+      For Steam Version the save is in:<br /> "C:\Users\YOURUSERNAME\AppData\Local\FalloutShelter"
+      <br />
+      For Android Version the Save is in:<br /> "storage/sdcard/Android/data/com.bethsoft.falloutshelter/files"
+    </div>
     <div class="row tabs">
-      <a href="" class="tab">Fallout Shelter - Save Editor</a>
       <a href="" ng-hide="!save.dwellers" class="tab" ng-click="section = 'vault'"
         ng-class="{ 'active': section == 'vault' }">Vault {{ save.vault.VaultName }}<small></small></a>
       <a href="" ng-hide="!save.dwellers" class="tab" ng-click="section = 'dwellers'"
@@ -383,10 +398,7 @@ Copyright (C) 2017
         <hr />
 
         <br>
-        <center><b><a href="https://github.com/rakion99/shelter-editor">View the Source Code</a></b></center>
-        <br>
-        <center><label>Updated by <a href="https://github.com/rakion99/">rakion99</a> &amp; <a
-              href="https://github.com/TheCreatorJames/">TheCreatorJames</a></label></center>
+        <center><b><a href="https://github.com/cguanzon/shelter-editor">View the Source Code</a></b></center>
         <br>
         <center><label>Project Originally by <a
               href="https://github.com/MobileSam/shelter-editor">MobileSam</a>.</label></center>
@@ -527,53 +539,31 @@ Copyright (C) 2017
       <button class="btn btn-primary pull-right" ng-click="download()" ng-show="fileName">Save</button>
     </div>
     <br>
-    <div class="instructions">
-      <p>Large Files can take more time to load!</p>
-      Drag a save file here (e.g. Vault1.sav) <br />
-      or select one here: <br /><input type="file" id="sav_file" name="sav_file" />
+
+    <div id="bottom">
+      <center><b><a style="color: blue;" href="SaveDecrypt.html">Fallout Shelter Save Decryptor</a></b></center>
+      <br /><br /><span style="color: #000000;"><strong>Fallout Shelter content and materials are trademarks and
+          copyrights of Bethesda and its licensors. All rights reserved.
+          <br />This site is a part of Internet. and is not affiliated with Bethesda.</strong></span>
+      <br /><br /><span style="color: #000000;"><a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/3.0/"><img
+            alt="Creative Commons License" style="border-width:0"
+            src="https://i.creativecommons.org/l/by-nc-sa/3.0/88x31.png" /></a><br />This work is
+        licensed under a <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/3.0/">Creative Commons
+          Attribution-NonCommercial-ShareAlike 3.0 Unported License</a>.</span>
+      <br /><br /><span style="color: #000000;">Copyright (C) 2017</span>
+      <br /><br /><br /><span style="color: #000000;"><strong>Copyright Agent</strong></span>
+      <br /><br /><span style="color: #000000;">If you believe that any User Content or other material on the Service
+        infringes your copyright rights, please contact us with the exact URL of where the alleged infringing material is
+        located. If we are notified that any User Content infringes another's intellectual property rights, we may remove
+        such User Content.</span>
+
+      <br /><br /><br /><span style="color: #000000;"><strong>Disclaimer of Warranties</strong></span>
+      <br /><br /><span style="color: #000000;">Your use of the Site is at your own risk, and the Site is provided "as is"
+        without warranties of any kind, either express or implied. rakion99.github.io does not warrant that the service
+        will be available, uninterrupted, secure, or error-free, that defects will be corrected, or that the service or
+        the servers that make the service available are free of viruses or other harmful components. rakion99.github.io
+        does not accept any liability for any loss or damage arising from your use of the Site.</span>
       <br /><br /><br />
-      For PC/Launcher Version the save is in:<br /> "Documents\My Games\Fallout Shelter"
-      <br />
-      For Windows 10 Store version check this: <a
-        href="https://bethesda.net/community/topic/25405/transfer-vault-from-desktop-version-to-play-anywhere">Click
-        Here</a>
-      <br />
-      For Steam Version the save is in:<br /> "C:\Users\YOURUSERNAME\AppData\Local\FalloutShelter"
-      <br />
-      For Android Version the Save is in:<br /> "storage/sdcard/Android/data/com.bethsoft.falloutshelter/files"
-    </div>
-
-
-
-
-    <br /><br />
-    <br>
-    <center><b><a style="color: #ffffff; background-color: rgb(122, 122, 122);" href="SaveDecrypt.html">Fallout Shelter Save Decryptor</a></b></center>
-    <br /><br /><span style="color: #00ff00;"><strong>Fallout Shelter content and materials are trademarks and
-        copyrights of Bethesda and its licensors. All rights reserved.
-        <br />This site is a part of Internet. and is not affiliated with Bethesda.</strong></span>
-    <br /><br /><span style="color: #00ff00;"><a rel="license"
-        href="http://creativecommons.org/licenses/by-nc-sa/3.0/"><img alt="Creative Commons License"
-          style="border-width:0" src="https://i.creativecommons.org/l/by-nc-sa/3.0/88x31.png" /></a><br />This work is
-      licensed under a <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/3.0/">Creative Commons
-        Attribution-NonCommercial-ShareAlike 3.0 Unported License</a>.</span>
-    <br /><br /><span style="color: #00ff00;">Copyright (C) 2017</span>
-    <br /><br /><br /><span style="color: #00ff00;"><strong>Copyright Agent</strong></span>
-    <br /><br /><span style="color: #00ff00;">If you believe that any User Content or other material on the Service
-      infringes your copyright rights, please contact us with the exact URL of where the alleged infringing material is
-      located. If we are notified that any User Content infringes another's intellectual property rights, we may remove
-      such User Content.</span>
-
-    <br /><br /><br /><span style="color: #00ff00;"><strong>Disclaimer of Warranties</strong></span>
-    <br /><br /><span style="color: #00ff00;">Your use of the Site is at your own risk, and the Site is provided "as is"
-      without warranties of any kind, either express or implied. rakion99.github.io does not warrant that the service
-      will be available, uninterrupted, secure, or error-free, that defects will be corrected, or that the service or
-      the servers that make the service available are free of viruses or other harmful components. rakion99.github.io
-      does not accept any liability for any loss or damage arising from your use of the Site.</span>
-    <br /><br /><br /><span style="color: #00ff00;"><strong>Contacting Us</strong></span>
-    <br /><br /><span style="color: #00ff00;">If you have any questions about something or your dealings with the Site,
-      please contact us at _rakion99@outlook.com</span>
-
   </div>
 
   <script src="js/jquery-2.1.4.min.js"></script>

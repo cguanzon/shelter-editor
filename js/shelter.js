@@ -161,13 +161,14 @@ function edit(fileName, save) {
   scope.$apply(function () {
     scope.save = save;
     scope.fileName = fileName;
+    scope.section = 'vault';
   });
 }
 
 var app = angular.module('shelter', []);
 
 app.controller('dwellerController', function ($scope) {
-  $scope.section = 'vault';
+  $scope.section = '';
 
   $scope.fileName = '';
   $scope.dweller = {};
