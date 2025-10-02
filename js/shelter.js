@@ -987,6 +987,7 @@ app.controller('dwellerController', function ($scope) {
     Fatman_Mirv: 'MIRV',
     MissilLauncher_MissLauncher: 'Miss Launcher',
     MissilLauncher: 'Missile Launcher',
+    MountainMomma: 'Mountain Momma',
     PlasmaPistol_MPLXNovasurge: 'MPXL Novasurge',
     InstituteRifle_NightVision: 'Night-Vision Institute Rifle',
     PipeRifle_NightVision: 'Night-Vision Pipe Rifle',
